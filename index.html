@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/style.min.css">
+</head>
+
+<body>
+  <div class="mortgage">
+    <header class="mortgage__header">
+      <h1 class="mortgage__header__title">Mortgage Calculator</h1>
+      <p class="mortgage__header__clear">Clear All</p>
+    </header>
+    <div class="mortgage__form-container">
+      <form class="mortgage__form">
+        <div class="mortgage__form__box amount-box">
+
+          <label for="">Mortgage Amount</label>
+          <div class="amount-box__decorator">
+            <span class="amount-box__decorator__prefix">$</span>
+            <input type="text" name="" id="amount" class="mortgage__form__box__input input-amount">
+          </div>
+        </div>
+        <div class="mortgage__form__box term-box">
+          <div class="term-box__decorator">years</div>
+          <label for="">Mortgage Term</label>
+          <input type="text" name="" id="term" class="mortgage__form__box__input input-term">
+        </div>
+        <div class="mortgage__form__box interest-box">
+          <div class="interest-box__decorator">%</div>
+          <label for="">Interest Rate</label>
+          <input type="text" name="" id="rate" class="mortgage__form__box__input input-rate">
+        </div>
+        <div class="mortgage__form__box type-box">
+          <label for="">Mortgage Type</label>
+          <div class="type-box__option1-box">
+            <input type="radio" name="type" id="type1" class="mortgage__form__box__input input-radio1">
+            <p for="">Repayment</p>
+          </div>
+          <div class="type-box__option2-box">
+            <input type="radio" name="type" id="type2" class="mortgage__form__box__input input-radio2">
+            <p for="">Interest Only</p>
+          </div>
+          <p class="type-error">Please select Your Mortgage Type</p>
+        </div>
+        <button class="mortgage__form-submit">
+          <img src="./dist/img/calculator-svgrepo-com.svg" alt="">
+          Calculate Repayments
+        </button>
+      </form>
+
+    </div>
+    <div class="result">
+      <div class="result__before-box">
+        <img src="./dist/img/illustration-empty.svg" alt="" class="result__before-box__img">
+        <div class="result__before-box__text">
+          <h2>Results shown here</h2>
+          <p>Complete the form and click "calculate repayments" to see what your monthly repayments would be.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./dist/js/script.min.js"></script>
+</body>
+
+</html>

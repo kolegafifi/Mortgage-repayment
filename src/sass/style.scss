@@ -1,0 +1,23 @@
+@use './colors' as *;
+@import './iphone16';
+
+*::before,
+*::after,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	min-height: 100vh;
+	height: 100%;
+	background-color: $grey100;
+}
+input{
+	outline: none;
+}
