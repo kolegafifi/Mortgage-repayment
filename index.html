@@ -19,29 +19,37 @@
 
 <body>
   <div class="mortgage">
-    <header class="mortgage__header">
-      <h1 class="mortgage__header__title">Mortgage Calculator</h1>
-      <p class="mortgage__header__clear">Clear All</p>
-    </header>
-    <div class="mortgage__form-container">
-      <form class="mortgage__form">
-        <div class="mortgage__form__box amount-box">
 
-          <label for="">Mortgage Amount</label>
-          <div class="amount-box__decorator">
-            <span class="amount-box__decorator__prefix">$</span>
-            <input type="text" name="" id="amount" class="mortgage__form__box__input input-amount">
+    <div class="mortgage__form-container">
+      <header class="mortgage__header">
+        <h1 class="mortgage__header__title">Mortgage Calculator</h1>
+        <p class="mortgage__header__clear">Clear All</p>
+      </header>
+      <form class="mortgage__form">
+
+        <div class="mortgage__form__box amount-box">
+          <label for="" class="mortgage__form__box__label">Mortgage Amount</label>
+          <div class="mortgage__form__box__input-box">
+            <div class="mortgage__form__box__input-box__decorator">$</div>
+            <input type="text" class="mortgage__form__box__input-box__input" id="amount">
           </div>
         </div>
+
         <div class="mortgage__form__box term-box">
-          <div class="term-box__decorator">years</div>
-          <label for="">Mortgage Term</label>
-          <input type="text" name="" id="term" class="mortgage__form__box__input input-term">
+
+          <label for="" class="mortgage__form__box__label">Mortgage Term</label>
+          <div class="mortgage__form__box__input-box">
+
+            <input type="text" class="mortgage__form__box__input-box__input" id="term">
+            <div class="mortgage__form__box__input-box__decorator">Years</div>
+          </div>
         </div>
         <div class="mortgage__form__box interest-box">
-          <div class="interest-box__decorator">%</div>
-          <label for="">Interest Rate</label>
-          <input type="text" name="" id="rate" class="mortgage__form__box__input input-rate">
+          <label for="" class="mortgage__form__box__label">Interest Rate</label>
+          <div class="mortgage__form__box__input-box">
+            <input type="text" class="mortgage__form__box__input-box__input" id="rate">
+            <div class="mortgage__form__box__input-box__decorator">%</div>
+          </div>
         </div>
         <div class="mortgage__form__box type-box">
           <label for="">Mortgage Type</label>
@@ -55,7 +63,7 @@
           </div>
           <p class="type-error">Please select Your Mortgage Type</p>
         </div>
-        <button class="mortgage__form-submit">
+        <button class="mortgage__form-submit" id="submit">
           <img src="./dist/img/calculator-svgrepo-com.svg" alt="">
           Calculate Repayments
         </button>
@@ -63,11 +71,25 @@
 
     </div>
     <div class="result">
-      <div class="result__before-box">
+      <div class="result__before-box active">
         <img src="./dist/img/illustration-empty.svg" alt="" class="result__before-box__img">
         <div class="result__before-box__text">
           <h2>Results shown here</h2>
           <p>Complete the form and click "calculate repayments" to see what your monthly repayments would be.</p>
+        </div>
+      </div>
+      <div class="result__after-box">
+        <h2 class="result__after-box__title">Your results</h2>
+        <p class="result__after-box__info">Your results are shown below based on the information you provided. To adjust
+          the results, edit the form and
+          click "calculate repayments" again.</p>
+
+        <div class="result__after-box__result-box">
+          <p class="result__after-box__result-box__title">Your monthly repayments</p>
+          <h1 class="result__after-box__result-box__result-main result-main">$</h1>
+          <hr>
+          <p class="result__after-box__result-box__title2">Total you'll repay over the term</p>
+          <h2 class="result__after-box__result-box__secondary result-secondary">$</h2>
         </div>
       </div>
     </div>

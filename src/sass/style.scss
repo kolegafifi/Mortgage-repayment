@@ -1,5 +1,6 @@
 @use './colors' as *;
 @import './iphone16';
+@import './ipad';
 
 *::before,
 *::after,
@@ -18,6 +19,14 @@ body {
 	height: 100%;
 	background-color: $grey100;
 }
-input{
+input {
 	outline: none;
+}
+.result{
+	&__before-box, &__after-box{
+		display: none;
+	}
+}
+.active {
+	display: flex;
 }

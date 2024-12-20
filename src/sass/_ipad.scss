@@ -1,0 +1,35 @@
+@media (min-width: 1000px) {
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		padding: 2em;
+	}
+
+	.mortgage {
+		max-width: 1000px;
+		width: 100%;
+		flex-direction: row;
+		border-radius: 2.4em;
+		overflow: hidden;
+		&__form-container {
+			width: 50%;
+			padding: 2.4em 2.4em;
+		}
+		.result {
+			width: 50%;
+			margin-top: 0;
+			border-bottom-left-radius: 10em;
+			overflow: hidden;
+			&__before-box {
+				height: 100%;
+				padding: 10em;
+			}
+			&__before-box,
+			&__after-box {
+				padding: 4em;
+			}
+		}
+	}
+}
